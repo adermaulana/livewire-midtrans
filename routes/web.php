@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/checkout', App\Livewire\Checkout::class);
+Route::get('/', App\Livewire\AddProduct::class);
